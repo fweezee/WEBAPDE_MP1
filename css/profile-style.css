@@ -1,0 +1,231 @@
+#mainpage .header{
+    color: black;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+body{
+    background: #e6ecf0;
+}
+
+#mainpage{
+    min-height: 85%;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    background: #e6ecf0;
+    bottom: 0px;
+    /*background-size: 100% auto contain;*/
+    /*background-attachment: fixed;*/
+    /*background: #b27771 url("../img/bg2.jpg") center center;*/
+    /*background-repeat: no-repeat;*/
+    box-shadow: inset -1px -1px 10px #000;
+
+}
+
+.profile_container{
+    position: absolute;
+    background: white;
+    top: 5%;
+    left: 10%;
+    width: 300px;
+    height: 150px;
+    border-radius: 1%;
+    margin: 10px;
+}
+
+.profile_info{
+    position: absolute;
+    background: white;
+    top:25%;
+    left:10%;
+    width: 300px;
+    min-height: 150px;
+    border-radius: 1%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.profile_post{
+    position: absolute;
+    background: #e6ecf0;
+    top:5%;
+    left:30%;
+    width: 700px;
+    min-height: 100%;
+    border-radius: 1%;
+    margin: 5px;
+}
+
+.profile_album{
+     position: absolute;
+     background: #e6ecf0;
+     top:5%;
+     left:65%;
+     width: 500px;
+     min-height: 100%;
+     border-radius: 1%;
+     margin: 5px;
+
+ }
+
+#prof_img{
+    position:absolute;
+    left: 15%;
+    top: 20%;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: black;
+    padding: 1px;
+}
+
+#name-display{
+    position:absolute;
+    left: 45%;
+    top:35%
+}
+
+#username{
+    position: absolute;
+    font-size: 10px;
+    top: 45%;
+    left: 45%;
+
+}
+
+.profile_post_box{
+    margin: 0px 8% 10px;
+    padding: 5%;
+    width: 85%;
+    background: white;
+    border-radius: 1%;
+
+}
+
+ul li{
+    font-size: 10px;
+    margin: 10px 10px;
+    padding: 2px;
+}
+
+
+/*albums*/
+
+.profile_album_box{
+    margin: 0px 8% 10px;
+    padding: 5%;
+    width: 100%;
+    background: white;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    border: 1px solid #ccc;
+    width: 200px;
+    overflow: hidden;
+}
+
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 50%;
+    height: 10%;
+}
+
+span.clear { clear: left; display: block; }
+
+/*pop-up*/
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

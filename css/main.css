@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #3d3d3d;
+    border-bottom-width: 0;
+    transition: border-bottom-width ease 0.1s;
+}
+
+a:hover{
+    border-bottom-width: 2px;
+}
+
+/* Navigation Bar */
+#topBar{
+    width: 100%;
+    height: 5vh;
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #646262;
+}
+
+#topBar div{
+    display: block;
+    vertical-align: middle;
+    float: left;
+}
+
+#body{
+    background-size: 100% auto contain;
+    background-attachment: fixed;
+    background: white;
+    background-repeat: no-repeat;
+}
+
+#title{
+
+    width: 20vw;
+    height: 100%;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+#title h1{
+    margin-top: 2vh;
+    font-size: 4.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#mainNav{
+    width: 58%;
+    margin-top: 1vh;
+    margin-left: 20%;
+}
+
+#mainNav nav{
+    width: 100%;
+    text-align: right;
+}
+
+#mainNav nav a{
+    padding: 3px 14px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#mainNav nav span{
+    position: relative;
+}
+
+#mainNav nav span img{
+    top: 0;
+    left: 0;
+    margin: 3px 4px 3px 8px;
+    padding-right: 5px;
+    position: absolute;
+    z-index: 10;
+    height: 20px;
+    width: 25px;
+    border-right: 1px solid #e2e2e2;
+}
+
+#search{
+    width: 220px;
+    height: 50%;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 5px 5px 38px;
+    border: 1px solid #e2e2e2;
+    position: relative;
+    transition: box-shadow ease-in 0.1s;
+}
+
+#search:focus{
+    box-shadow: 0 0 2px rgba( 82, 147, 213, 0.7);
+    border-color: rgba( 82, 147, 213, 0.5);
+}
+
+#search:after{
+    content: 'a';
+    background: #000;
+}
+
+.stickyTitle{
+    margin-top: 3px !important;
+    font-size: 2.5em !important;
+}
+
+.sticky{
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 45px !important;
+    position: fixed !important;
+}
+
+.stickyNav{
+    width: 65% !important;
+    margin: 8px auto 0 26vh !important;
+}
+
+
+.stickyBody{
+    margin-top: 75px !important;
+}

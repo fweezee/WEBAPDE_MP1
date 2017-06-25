@@ -1,0 +1,20 @@
+#topBar div{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#title{
+    font-size: 3em;
+}
+
+#topBar nav a{
+    color: #fff;
+    float: left;
+    padding: 5px;
+    font-size: 2em;
+}
+
+#topBar nav{
+    background-color: #2b2b2b;
+}
